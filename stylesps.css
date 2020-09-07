@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding 0;
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+
+	.topnav {   /* add a blackground color to the navbar*/
+
+		background-color: black;       /* change color later */
+		overflow: hidden;
+
+	}
+
+	.topnav a {   /* styles the links inside the nav bar*/
+
+		float: left;
+		color: #f2f2f3;
+		text-align: center;
+		padding: 20px 20px;
+		text-decoration: none;
+		font-size: 20px;
+		text-transform: uppercase;
+
+	}
+
+  .sdfsdfe a {   /* styles the links inside the nav bar*/
+
+  	float: left;
+  	color: white;
+  	text-align: center;
+  	padding: 20px 20px;
+  	height: 11000px;
+  	width: 70220px;
+
+  }
+
+
+.footer{
+      width: 100vw;
+      display: block;
+      overflow: hidden;
+      padding: 70px 0;
+      box-sizing: border-box;
+      background-color: #18181a;
+}
+
+.inner_footer{
+      display: block;
+      margin: 0 auto;
+      width: 1200px;
+
+
+}
+
+.inner_footer .logo_container{
+    width: 30%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .logo_container img{
+    width: 90px;
+    height: auto;
+}
+
+
+.inner_footer .footer_third{
+    width: 130px;
+    margin-right: 15px;
+    float: left;
+    height: 100%;
+
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+
+}
+
+.inner_footer .footer_third a{
+    font-family:'Roboto', sans-serif;;
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+
+}
+
+
+.inner_footer .footer_third li{
+display: inline-block;
+padding: 0 5px;
+font-size: 20px;
+
+
+
+}
+
+.inner_footer .footer_third span{
+    color: white;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 15px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+
+}
+
+
+.active{
+    height: 2px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    bottom: 865px;
+    transition: transform .6s;
+
+}
+
+.topnav:nth-child(1):hover ~ .active{
+  transform: translateX(0);
+}
+
+.topnav:nth-child(2):hover ~ .active{
+  transform: translateX(200px);
+}
+
+
+.topnav:nth-child(3):hover ~ .active{
+  transform: translateX(400px);
+}
+
+.topnav:nth-child(4):hover ~ .active{
+  transform: translateX(600px);
+}
+
+.topnav:nth-child(5):hover ~ .active{
+  transform: translateX(800px);
+}
+
+.topnav:nth-child(6):hover ~ .active{
+  transform: translateX(1000px);
+}
