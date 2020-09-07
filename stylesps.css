@@ -24,23 +24,26 @@
 		text-decoration: none;
 		font-size: 20px;
 		text-transform: uppercase;
-
-	}
-
-  .sdfsdfe a {   /* styles the links inside the nav bar*/
-
-  	float: left;
-  	color: white;
-  	text-align: center;
-  	padding: 20px 20px;
-  	height: 11000px;
-  	width: 70220px;
-
-  }
+    max-height: 200px;
 
 
+}
+ul {
+    display: table-row;
+}
+
+li {
+    width: auto;
+    padding-right: 15px;
+    border: 1px solid black;
+    display: table-cell;
+}
+nav{
+  display: flex;
+  justify-content: flex-start;
+}
 .footer{
-      width: 100vw;
+      width: auto;
       display: block;
       overflow: hidden;
       padding: 70px 0;
@@ -51,7 +54,7 @@
 .inner_footer{
       display: block;
       margin: 0 auto;
-      width: 1200px;
+      width: auto;
 
 
 }
@@ -103,6 +106,7 @@ font-size: 20px;
 
 }
 
+}
 .inner_footer .footer_third span{
     color: white;
     font-family: 'Roboto', sans-serif;;
@@ -116,36 +120,61 @@ font-size: 20px;
 
 
 .active{
-    height: 2px;
+    height: 3px;
     width: 200px;
-    background-color: red;
-    position: absolute;
-    bottom: 865px;
+    background-color: #f25b50;
+    position: absolute(10px);
+    bottom: 675px;
     transition: transform .6s;
+        transition: transform .6s;
+  transform: translateX(100px);
 
-}
-
-.topnav:nth-child(1):hover ~ .active{
-  transform: translateX(0);
 }
 
 .topnav:nth-child(2):hover ~ .active{
-  transform: translateX(200px);
+  transform: translateX(100px);
+      width: 200px;
 }
-
 
 .topnav:nth-child(3):hover ~ .active{
-  transform: translateX(400px);
+  transform: translateX(320px);
+      width: 200px;
 }
 
+
 .topnav:nth-child(4):hover ~ .active{
-  transform: translateX(600px);
+  transform: translateX(570px);
+    width: 200px;
 }
 
 .topnav:nth-child(5):hover ~ .active{
-  transform: translateX(800px);
+  transform: translateX(825px);
+    width: 200px;
 }
 
 .topnav:nth-child(6):hover ~ .active{
-  transform: translateX(1000px);
+  transform: translateX(1070px);
+  width: 100px;
+}
+
+.topnav:nth-child(7):hover ~ .active{
+  transform: translateX(1200px);
+    width: 150px;
+}
+.active1{
+    height: 380px;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    bottom: 270px;
+    transition: transform .6s;
+      transform: translateX(-300px);
+
+}
+
+
+
+
+.topnav:nth-child(1):hover ~ .active1{
+  transform: translateX(-40px);
 }
