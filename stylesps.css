@@ -46,9 +46,12 @@ z-index: 10;
   transform: translate(85vh, 45vh);
 	color: #fff;
 	overflow: hidden;
+  background-color: black;
+  opacity: 50%
 }
 .projectsimple a {
-		color: #f2f2f3;
+		color: white;
+
 }
 .projectsimple:hover{
   background-color: white;
@@ -198,7 +201,11 @@ font-size: 6vh;
       transform: translateX(-30vh);
 
 }
-
+.active1 a:hover{
+    transform: translateX(-5.5vh);
+        background-color: green;
+            transition: transform .0s;
+}
 
 
 
