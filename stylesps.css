@@ -6,13 +6,21 @@
 
 
 }
-
+.blacktop{
+  background-color: black;
+  top:0px;
+  height: 0.6vh;
+  width: 1000000px;
+  z-index: 200;
+  		overflow: hidden;
+      		float: left;
+}
 
 	.topnav {   /* add a blackground color to the navbar*/
 
 		background-color: black;       /* change color later */
 		overflow: hidden;
-
+z-index: 10;
 	}
 
 	.topnav a {   /* styles the links inside the nav bar*/
@@ -20,13 +28,33 @@
 		float: left;
 		color: #f2f2f3;
 		text-align: center;
-		padding: 20px 20px;
+		padding: 3vh 3vh;
 		text-decoration: none;
-		font-size: 20px;
+		font-size: 3vh;
 		text-transform: uppercase;
-    max-height: 200px;
+    max-height: 3vh;
 
 
+}
+.projectsimple {
+  width: 52vh;
+  height: 14vh;
+  font-size: 3vh;
+  color: white;
+  border: 0.6vh solid #fff;
+  margin: 6px;
+  transform: translate(80vh, 45vh);
+	color: #fff;
+	overflow: hidden;
+  background-color: black;
+  opacity: 50%
+}
+.projectsimple a {
+		color: white;
+
+}
+.projectsimple:hover{
+  background-color: white;
 }
 ul {
     display: table-row;
@@ -34,7 +62,7 @@ ul {
 
 li {
     width: auto;
-    padding-right: 15px;
+    padding-right: 1.5vh;
     border: 1px solid black;
     display: table-cell;
 }
@@ -46,9 +74,10 @@ nav{
       width: auto;
       display: block;
       overflow: hidden;
-      padding: 70px 0;
+      padding: 4% 0;
       box-sizing: border-box;
       background-color: #18181a;
+        transform: translate(0, 90vh)
 }
 
 .inner_footer{
@@ -60,48 +89,49 @@ nav{
 }
 
 .inner_footer .logo_container{
-    width: 30%;
+    width: 20%;
     float: left;
     height: 100%;
     display: block;
 }
 
 .inner_footer .logo_container img{
-    width: 90px;
+    width: 20%;
     height: auto;
 }
 
 
 .inner_footer .footer_third{
-    width: 130px;
-    margin-right: 15px;
+    width: 15%;
+    margin-right: 1%;
     float: left;
     height: 100%;
-
+    color: white;
+    font-size: 3.5vh;
 }
 
 .inner_footer .footer_third:last-child{
     margin-right: 0;
-
+    color: white;
 }
 
 .inner_footer .footer_third a{
     font-family:'Roboto', sans-serif;;
-    font-size: 20px;
+    font-size: 3vh;
     color: white;
     display: block;
     font-weight: 200;
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: .5vh;
 
 }
 
 
 .inner_footer .footer_third li{
 display: inline-block;
-padding: 0 5px;
-font-size: 20px;
-
+padding: 0 0.5vh;
+font-size: 6vh;
+    color: white;
 
 
 }
@@ -110,71 +140,75 @@ font-size: 20px;
 .inner_footer .footer_third span{
     color: white;
     font-family: 'Roboto', sans-serif;;
-    font-size: 15px;
+    font-size: 2vh;
     font-weight: 200;
     display: block;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 2vh;
+        color: white;
 
 }
 
 
 .active{
-    height: 3px;
-    width: 200px;
+    height:0.4vh;
+    width: 25vh;
     background-color: #f25b50;
     position: absolute(10px);
-    bottom: 675px;
+    bottom: 700px;
     transition: transform .6s;
-        transition: transform .6s;
-  transform: translateX(100px);
+  transform: translateX(14vh);
 
 }
 
 .topnav:nth-child(2):hover ~ .active{
-  transform: translateX(100px);
-      width: 200px;
+  transform: translateX(14vh);
+      width: 25vh;
 }
 
 .topnav:nth-child(3):hover ~ .active{
-  transform: translateX(320px);
-      width: 200px;
+  transform: translateX(46vh);
+      width: 25vh;
 }
 
 
 .topnav:nth-child(4):hover ~ .active{
-  transform: translateX(570px);
-    width: 200px;
+  transform: translateX(80vh);
+    width: 28vh;
 }
 
 .topnav:nth-child(5):hover ~ .active{
-  transform: translateX(825px);
-    width: 200px;
+  transform: translateX(117vh);
+    width: 30vh;
 }
 
 .topnav:nth-child(6):hover ~ .active{
-  transform: translateX(1070px);
-  width: 100px;
+  transform: translateX(155vh);
+  width: 11vh;
 }
 
 .topnav:nth-child(7):hover ~ .active{
-  transform: translateX(1200px);
-    width: 150px;
+  transform: translateX(173vh);
+    width: 20vh;
 }
 .active1{
-    height: 380px;
-    width: 200px;
+    height: 38vh;
+    width: 25vh;
     background-color: black;
     position: fixed;
-    bottom: 270px;
+    top:7vh;
     transition: transform .6s;
-      transform: translateX(-300px);
+      transform: translateX(-30vh);
 
 }
-
+.active1 a:hover{
+    transform: translateX(-5.5vh);
+        background-color: green;
+            transition: transform .0s;
+}
 
 
 
 .topnav:nth-child(1):hover ~ .active1{
-  transform: translateX(-40px);
+  transform: translateX(-5.5vh);
 }
