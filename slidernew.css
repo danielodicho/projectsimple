@@ -1,6 +1,6 @@
 #slider {
    margin: 0 auto;
-   width: 1700px;
+   width: 170vh;
    max-width: 100%;
    text-align: center;
 
@@ -14,11 +14,11 @@
    text-decoration: none;
 }
 #slides {
-   padding: 10px;
+   padding: 1vh;
    background: black;
    position: relative;
    z-index: 1;
-   transform: translate(-30px, 120px);
+   transform: translate(-3vh, 2vh);
 }
 #overflow {
    width: 100%;
@@ -40,7 +40,7 @@
    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
    width: 400%;
    line-height: 0;
-   height: 800px;
+   height: 80vh;
 
 }
 #slides .slide {
@@ -55,10 +55,15 @@
 }
 .slide img {
   height: auto;
-  width: 1000px;
+  width: 100vh;
 }
 
+.slide_2 img {
 
+height : auto;
+transform: translate(10vh, 10vh);
+
+}
 
 
 #slides .slide_1 {
@@ -77,17 +82,17 @@
    background: grey;
 }
 #controls {
-   margin: -180px 0 0 0;
+   margin: -18vh 0 0 0;  /** messes with the slider buttons */
    width: 100%;
-   height: 50px;
+   height: 5vh;    /**  body main size, big number big body  **/
    z-index: 3;
    position: relative;
 }
 #controls label {
    transition: opacity 0.2s ease-out;
    display: none;
-   width: 50px;
-   height: 50px;
+   width: 5vh;
+   height: 5vh;
    opacity: .4;
 }
 #controls label:hover {
@@ -106,7 +111,7 @@
  {
    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
    float:right;
-   transform: translate(70px, -250px);
+   transform: translate(4vh, -22vh);
    display: block;
 }
 
@@ -116,7 +121,7 @@
 #slide4:checked ~ #controls label:nth-last-child(2) {
    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
    float:left;
-   transform: translate(-100px, -250px);
+   transform: translate(-10vh, -22vh);  /** x = width, y = height  **/
    display: block;
 }
 
@@ -127,7 +132,7 @@
 #slide4:checked ~ #bullets label:nth-child(4) {
    background: #444;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 90vh)  /** var egt 900px, idk what this does rn **/ {
    #slide1:checked ~ #controls label:nth-child(2),
    #slide2:checked ~ #controls label:nth-child(3),
    #slide3:checked ~ #controls label:nth-child(4),
