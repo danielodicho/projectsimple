@@ -3,8 +3,7 @@
    width: 170vh;
    max-width: 100%;
    text-align: center;
-   		transform: translate(0, 90vh);
-
+transform: translate(0, 90vh);
 }
 
 #slider input[type=radio] {
