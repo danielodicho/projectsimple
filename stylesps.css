@@ -6,21 +6,12 @@
 
 
 }
-.blacktop{
-  background-color: black;
-  top:0px;
-  height: 0.6vh;
-  width: 1000000px;
-  z-index: 200;
-  		overflow: hidden;
-      		float: left;
-}
 
 	.topnav {   /* add a blackground color to the navbar*/
 
 		background-color: black;       /* change color later */
 		overflow: hidden;
-z-index: 10;
+z-index: 0;
 	}
 
 	.topnav a {   /* styles the links inside the nav bar*/
@@ -36,13 +27,16 @@ z-index: 10;
 
 
 }
+.button:hover {
+  opacity: 0.1;
+}
 .projectsimple {
   width: 52vh;
   height: 14vh;
   font-size: 3vh;
   color: white;
   border: 0.6vh solid #fff;
-  margin: 6px;
+  margin: 0.6vh;
   transform: translate(80vh, 45vh);
 	color: #fff;
 	overflow: hidden;
@@ -63,7 +57,7 @@ ul {
 li {
     width: auto;
     padding-right: 1.5vh;
-    border: 1px solid black;
+
     display: table-cell;
 }
 nav{
@@ -77,7 +71,7 @@ nav{
       padding: 4% 0;
       box-sizing: border-box;
       background-color: #18181a;
-        transform: translate(0, 90vh)
+
 }
 
 .inner_footer{
@@ -154,8 +148,8 @@ font-size: 6vh;
     height:0.4vh;
     width: 25vh;
     background-color: #f25b50;
-    position: absolute(10px);
-    bottom: 700px;
+    position: absolute(1vh);
+    bottom: 70vh;
     transition: transform .6s;
   transform: translateX(14vh);
 
