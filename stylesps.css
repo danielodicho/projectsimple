@@ -90,8 +90,9 @@ nav{
 }
 
 .inner_footer .logo_container img{
-    width: 20%;
+    width: 50%;
     height: auto;
+    transform: translate(14vh, 0vh);
 }
 
 
@@ -130,7 +131,7 @@ font-size: 6vh;
 
 }
 
-}
+
 .inner_footer .footer_third span{
     color: white;
     font-family: 'Roboto', sans-serif;;

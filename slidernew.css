@@ -1,9 +1,9 @@
 #slider {
    margin: 0 auto;
-   width: 180vh;         /* slider frame width */
+   width: 160vh;         /* slider frame width */
    max-width: 100%;
    text-align: center;
-transform: translate(0, 3vh);
+transform: translate(4vh, 3vh);
    z-index: 100;
    position: sticky;
 }
@@ -17,7 +17,7 @@ transform: translate(0, 3vh);
 }
 #slides {
    padding: 1vh;
-   background: black;
+   background: white;
    position: relative;
    z-index: 1;
    transform: translate(0, 0);
@@ -52,15 +52,15 @@ transform: translate(0, 3vh);
    justify-content: center;
    align-items: center;
    height: 100%;
-   color: yellow;
+
 
 }
 .slide img {
   height: auto;
-  width: 180vh;
+  width: 1600px;
 }
 
-.slide_2 img {
+.slide_2 img {     /* change this for the new pics */
 
 height : auto;
 transform: translate(10vh, 10vh);
@@ -68,26 +68,26 @@ transform: translate(10vh, 10vh);
 }
 
 
-#slides .slide_1 {
-   background: red;
+#slides .slide_1 {      /* background color for slides*/
+   background: ;
 
 }
 #slides .slide_2 {
-   background: blue;
+   background: ;
 }
 #slides .slide_3 {
-   background: #a5ccbe;
+   background: ;
 
 
 }
 #slides .slide_4 {
-   background: grey;
+   background: ;
 }
 #controls {
    margin: -18vh 0 0 0;  /** messes with the slider buttons */
    width: 100%;
    height: 4.5vh;    /**  body main size, big number big body  **/
-position: relative;
+   position: relative;
 
 
 }
@@ -154,10 +154,11 @@ position: relative;
 }
 #sidenavr {
    margin: 0 auto;
-   width: 20vh;
+   width: 25vh;
    max-width: 100%;
    text-align: center;
    transform: translate(-95vh, -90vh);
+
 }
 
 #sidenavr input[type=radio] {
@@ -172,7 +173,7 @@ position: relative;
 
    position: relative;
    z-index: -11;
-   transform: translate(-1.7vh, 20vh);
+   transform: translate(-1.7vh, 21.5vh);  /* sidenav location */
 }
 #overflow {
    width: 100%;
@@ -180,6 +181,9 @@ position: relative;
 }
 #sidenav1:checked ~ #sidenavs .inner {
    margin-left: -200%;
+}
+#sidenav2:checked ~ #sidenavs .inner {
+   margin-left: -7%; /*changes the position of the sidenav*/
 }
 
 #sidenavs .inner {
@@ -202,13 +206,15 @@ position: relative;
 
 }
 .sidenav-content {
-font-size: 0.1vh
+font-size: 100px;
 
 }
 
 #sidenavs .sidenav_1 {
-   background: black;
-
+   background: #f5574c;
+   outline-color: blue;
+    outline-width: thick;
+border: 1vh solid black;
 
 }
 
@@ -220,11 +226,11 @@ font-size: 0.1vh
 
 
 
-   transform: translate(-9vh, -26vh);
+   transform: translate(-12vh, -26vh);  /* pos for button, opening the nav  */
 
 }
 #sidenav-controls label {
-   transition: opacity 0.2s ease-out;
+   transition: opacity 0.2 s ease-out;
    display: none;
    width: 5vh;
    height: 5vh;
