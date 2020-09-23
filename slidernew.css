@@ -1,7 +1,7 @@
 #slider {
    margin: 0 auto;
    width: 160vh;         /* slider frame width */
-   max-width: 100%;
+   max-width: 160vh;
    text-align: center;
 transform: translate(4vh, 3vh);
    z-index: 100;
@@ -57,14 +57,18 @@ transform: translate(4vh, 3vh);
 }
 .slide img {
   height: auto;
-  width: 1600px;
+  width: 158vh;
 }
 
 .slide_2 img {     /* change this for the new pics */
 
 height : auto;
-transform: translate(10vh, 10vh);
+width: 158vh;
 
+
+}
+.slide_3 img {
+  width: 158vh;
 }
 
 
@@ -158,6 +162,7 @@ transform: translate(10vh, 10vh);
    max-width: 100%;
    text-align: center;
    transform: translate(-95vh, -90vh);
+   font-size: 1000px;
 
 }
 
@@ -173,7 +178,8 @@ transform: translate(10vh, 10vh);
 
    position: relative;
    z-index: -11;
-   transform: translate(-1.7vh, 21.5vh);  /* sidenav location */
+   transform: translate(0vh, 21.5vh);  /* sidenav location */
+   font-size: 1000px;
 }
 #overflow {
    width: 100%;
@@ -191,6 +197,7 @@ transform: translate(10vh, 10vh);
    width: 400%;
    line-height: 0;
    height: 80vh;
+   font-size: 1000px;
 
 }
 #sidenavs .sidenav {
@@ -201,20 +208,30 @@ transform: translate(10vh, 10vh);
    align-items: center;
    height: 100%;
    color: white;
-
+font-size: 1000px;
 }
-
+.inner {
+  font-size: 100px;
+}
+.sidenav_1 {
+  font-size: 1000px;
+}
 }
 .sidenav-content {
 font-size: 100px;
 
 }
+.sidenav-content a {
+font-size: 1000px;
+
+}
 
 #sidenavs .sidenav_1 {
    background: #f5574c;
-   outline-color: blue;
-    outline-width: thick;
+
 border: 1vh solid black;
+font-size: 1000px;
+
 
 }
 
@@ -226,7 +243,7 @@ border: 1vh solid black;
 
 
 
-   transform: translate(-12vh, -26vh);  /* pos for button, opening the nav  */
+   transform: translate(-15vh, -26vh);  /* pos for button, opening the nav  */
 
 }
 #sidenav-controls label {
