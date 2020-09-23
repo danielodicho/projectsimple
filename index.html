@@ -5,7 +5,6 @@
 	  <head>
 	    <meta charset="utf-8">
 	    <title></title>
-	    <link rel="stylesheet" href="style1.css">
 			<link rel = 'stylesheet' href= 'slidernew.css'>
 	  <link rel='stylesheet' type='text/css' href='stylesps.css'>
 
@@ -26,7 +25,7 @@
 
 		<ul class='topnav'>
 			<li class="topnav">
-				<a class="button">
+				<a href="#button1">
 			  <p1 style="color:white;font-size:3.5vh;cursor:pointer">&#9776; </p1>
 				</a>
 			</li>
@@ -49,7 +48,7 @@
 								<a href='#'>Contact Us</a>
 						</li>
 
-<div class="blacktop">
+
 						</div>
 
 
@@ -82,58 +81,203 @@
 
 	  </head>
 	  <body>
-			<body>
-				<div id="slider">
-				   <input type="radio" name="slider" id="slide1" checked>
-				   <input type="radio" name="slider" id="slide2">
-				   <input type="radio" name="slider" id="slide3">
-				   <input type="radio" name="slider" id="slide4">
-				   <div id="slides">
-				      <div id="overflow">
-				         <div class="inner">
-				            <div class="slide slide_1">
-				               <div class="slide-content">
-				                 <img src="1.png">
+			<div id="slider">
+			   <input type="radio" name="slider" id="slide1" checked>
+			   <input type="radio" name="slider" id="slide2">
+			   <input type="radio" name="slider" id="slide3">
+			   <input type="radio" name="slider" id="slide4">
+			   <div id="slides">
+			      <div id="overflow">
+			         <div class="inner">
+			            <div class="slide slide_1">
+			               <div class="slide-content">
+			                 <img src="havn.jpg">
 
 
 
-				               </div>
-				            </div>
-				            <div class="slide slide_2">
-				               <div class="slide-content">
-				                  <img src="2.png">
+			               </div>
+			            </div>
+			            <div class="slide slide_2">
+			               <div class="slide-content">
+			                  <img src="simplelogo.png">
 
 
 
-				               </div>
-				            </div>
-				            <div class="slide slide_3">
-				               <div class="slide-content">
-				                 <img src="2.jpg">
-				               </div>
-				            </div>
-				            <div class="slide slide_4">
-				               <div class="slide-content">
-				                  <img src="3.jpg">
+			               </div>
+			            </div>
+			            <div class="slide slide_3">
+			               <div class="slide-content">
+			                 <img src="2.jpg">
+			               </div>
+			            </div>
+			            <div class="slide slide_4">
+			               <div class="slide-content">
+			                  <img src="3.jpg">
 
-				               </div>
-				            </div>
-				         </div>
-				      </div>
-				   </div>
-				   <div id="controls">
-				      <label for="slide1"></label>
-				      <label for="slide2"></label>
-				      <label for="slide3"></label>
-				      <label for="slide4"></label>
-				   </div>
+			               </div>
+			            </div>
+			         </div>
+			      </div>
+			   </div>
+			   <div id="controls">
+			      <label for="slide1"></label>
 
-				</div>
+			      <label for="slide2"></label>
+			   </div>
 
+			</div>
 
 	  </body>
 
+		<style>
+		#sidenavr {
+		   margin: 0 auto;
+		   width: 17vh;
+		   max-width: 100%;
+		   text-align: center;
+		transform: translate(-95vh, -90vh);
+		}
 
+		#sidenavr input[type=radio] {
+		   display: none;
+		}
+		#sidenavr label {
+		   cursor:pointer;
+		   text-decoration: none;
+		}
+		#sidenavs {
+
+
+		   position: relative;
+		   z-index: 11;
+		   transform: translate(-3vh, 2vh);
+		}
+		#overflow {
+		   width: 100%;
+		   overflow: hidden;
+		}
+		#sidenav1:checked ~ #sidenavs .inner {
+		   margin-left: 0;
+		}
+		#sidenav2:checked ~ #sidenavs .inner {
+		   margin-left: -100%;
+		}
+
+		#sidenavs .inner {
+		   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		   width: 400%;
+		   line-height: 0;
+		   height: 80vh;
+
+		}
+		#sidenavs .sidenav {
+		   width: 25%;
+		   float:left;
+		   display: flex;
+		   justify-content: center;
+		   align-items: center;
+		   height: 100%;
+		   color: white;
+
+		}
+		.sidenav img {
+		  height: auto;
+		  width: 100vh;
+					   z-index: 11;
+		}
+
+		.sidenav_2 img {
+					   z-index: 11;
+
+		height : auto;
+		transform: translate(10vh, 10vh);
+
+		}
+
+
+		#sidenavs .sidenav_1 {
+		   background: black;
+
+		}
+		#sidenavs .sidenav_2 {
+		   background: blue;
+		}
+		#sidenavs .sidenav_3 {
+		   background: #a5ccbe;
+
+
+		}
+		#sidenavs .sidenav_4 {
+		   background: grey;
+		}
+		#sidenav-controls {
+		   margin: -18vh 0 0 0;  /** messes with the sidenavr buttons */
+		   width: 100%;
+		   height: 5vh;    /**  body main size, big number big body  **/
+		   z-index: 3;
+		   position: relative;
+			 z-index: 101;
+			 transform: translate(1vh, -1vh);
+
+		}
+		#sidenav-controls label {
+		   transition: opacity 0.2s ease-out;
+		   display: none;
+		   width: 5vh;
+		   height: 5vh;
+		   opacity: .4;
+
+		}
+		#sidenav-controls label:hover {
+		   opacity: 1;
+
+		}
+
+
+
+
+		#sidenav1:checked ~ #sidenav-controls label:nth-child(2),
+		#sidenav2:checked ~ #sidenav-controls label:nth-child(1)
+
+
+		 {
+		   background-image: url('open-menu.png');
+		   float:right;
+		   transform: translate(4vh, -22vh);
+		   display: block;
+		}
+
+		#sidenav1:checked ~ #sidenav-controls label:nth-last-child(2),
+		#sidenav2:checked ~ #sidenav-controls label:nth-last-child(1) {
+		   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+		   float:left;
+		   transform: translate(-10vh, -22vh);  /** x = width, y = height  **/
+		   display: block;
+		}
+
+		}
+		#sidenav1:checked ~ #bullets label:nth-child(1),
+		#sidenav2:checked ~ #bullets label:nth-child(2),
+		#sidenav3:checked ~ #bullets label:nth-child(3),
+		#sidenav4:checked ~ #bullets label:nth-child(4) {
+		   background: #444;
+		}
+		@media screen and (max-width: 90vh)  /** var egt 900px, idk what this does rn **/ {
+		   #sidenav1:checked ~ #sidenav-controls label:nth-child(2),
+		   #sidenav2:checked ~ #sidenav-controls label:nth-child(1),
+
+		   #sidenav1:checked ~ #sidenav-controls label:nth-last-child(2),
+		   #sidenav2:checked ~ #sidenav-controls label:nth-last-child(1),
+{
+		      margin: 0;
+		   }
+		   #sidenavs {
+		      max-width: calc(100% - 140px);
+		      margin: 0 auto;
+		   }
+		}
+
+		</style>
 		<html>
 		<body>
 		  <div id="sidenavr">
@@ -146,20 +290,13 @@
 		           <div class="inner">
 		              <div class="sidenav sidenav_1">
 		                 <div class="sidenav-content">
-        <div class="sidenav-content">
-					<a href="#" class="sidenav-content">
-  			<p style="font-size:18vh; color:white;" >Nr1</p>
-			</a>
-		                 </div>
-		              </div>
-									<div class="sidenav sidenav_2">
-
-
+		                   <h1>Projectsimple</h1>
 
 
 
 		                 </div>
 		              </div>
+
 		           </div>
 		        </div>
 		     </div>
@@ -225,7 +362,10 @@
 	<!-- the navbar-->
 
 	                  <span>
-	                   Hey, we appreciate you!
+	                    dumb motherfucker
+	                    2999
+	                    yessir
+	                    6+
 	                  </span>
 
 

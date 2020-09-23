@@ -1,11 +1,9 @@
 #slider {
    margin: 0 auto;
-   width: 160vh;         /* slider frame width */
-   max-width: 160vh;
+   width: 170vh;
+   max-width: 100%;
    text-align: center;
-transform: translate(4vh, 3vh);
-   z-index: 100;
-   position: sticky;
+transform: translate(0, 90vh);
 }
 
 #slider input[type=radio] {
@@ -17,10 +15,10 @@ transform: translate(4vh, 3vh);
 }
 #slides {
    padding: 1vh;
-   background: white;
+   background: black;
    position: relative;
    z-index: 1;
-   transform: translate(0, 0);
+   transform: translate(-3vh, 2vh);
 }
 #overflow {
    width: 100%;
@@ -42,7 +40,7 @@ transform: translate(4vh, 3vh);
    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
    width: 400%;
    line-height: 0;
-   height: 80vh;  /* slider frame height */
+   height: 80vh;
 
 }
 #slides .slide {
@@ -52,55 +50,50 @@ transform: translate(4vh, 3vh);
    justify-content: center;
    align-items: center;
    height: 100%;
-
+   color: yellow;
 
 }
 .slide img {
   height: auto;
-  width: 158vh;
+  width: 100vh;
 }
 
-.slide_2 img {     /* change this for the new pics */
+.slide_2 img {
 
 height : auto;
-width: 158vh;
+transform: translate(10vh, 10vh);
 
-
-}
-.slide_3 img {
-  width: 158vh;
 }
 
 
-#slides .slide_1 {      /* background color for slides*/
-   background: ;
+#slides .slide_1 {
+   background: red;
 
 }
 #slides .slide_2 {
-   background: ;
+   background: blue;
 }
 #slides .slide_3 {
-   background: ;
+   background: #a5ccbe;
 
 
 }
 #slides .slide_4 {
-   background: ;
+   background: grey;
 }
 #controls {
    margin: -18vh 0 0 0;  /** messes with the slider buttons */
    width: 100%;
-   height: 4.5vh;    /**  body main size, big number big body  **/
+   height: 5vh;    /**  body main size, big number big body  **/
+   z-index: 3;
    position: relative;
-
-
 }
 #controls label {
    transition: opacity 0.2s ease-out;
    display: none;
    width: 5vh;
    height: 5vh;
-
+   opacity: .4;
 }
 #controls label:hover {
    opacity: 1;
@@ -118,7 +111,7 @@ width: 158vh;
  {
    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
    float:right;
-   transform: translate(6vh, -22vh);
+   transform: translate(4vh, -22vh);
    display: block;
 }
 
@@ -128,9 +121,8 @@ width: 158vh;
 #slide4:checked ~ #controls label:nth-last-child(2) {
    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
    float:left;
-   transform: translate(-7vh, -22vh);  /** x = width, y = height  **/
+   transform: translate(-10vh, -22vh);  /** x = width, y = height  **/
    display: block;
-   z-index: 10;
 }
 
 }
@@ -152,156 +144,7 @@ width: 158vh;
       margin: 0;
    }
    #slides {
-      max-width: calc(100% - 14vh);
-      margin: 0 auto;
-   }
-}
-#sidenavr {
-   margin: 0 auto;
-   width: 25vh;
-   max-width: 100%;
-   text-align: center;
-   transform: translate(-95vh, -90vh);
-   font-size: 1000px;
-
-}
-
-#sidenavr input[type=radio] {
-   display: none;
-}
-#sidenavr label {
-   cursor:pointer;
-   text-decoration: none;
-}
-#sidenavs {
-
-
-   position: relative;
-   z-index: -11;
-   transform: translate(0vh, 21.5vh);  /* sidenav location */
-   font-size: 1000px;
-}
-#overflow {
-   width: 100%;
-   overflow: hidden;
-}
-#sidenav1:checked ~ #sidenavs .inner {
-   margin-left: -200%;
-}
-#sidenav2:checked ~ #sidenavs .inner {
-   margin-left: -7%; /*changes the position of the sidenav*/
-}
-
-#sidenavs .inner {
-   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-   width: 400%;
-   line-height: 0;
-   height: 80vh;
-   font-size: 1000px;
-
-}
-#sidenavs .sidenav {
-   width: 25%;
-   float:left;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-   color: white;
-font-size: 1000px;
-}
-.inner {
-  font-size: 100px;
-}
-.sidenav_1 {
-  font-size: 1000px;
-}
-}
-.sidenav-content {
-font-size: 100px;
-
-}
-.sidenav-content a {
-font-size: 1000px;
-
-}
-
-#sidenavs .sidenav_1 {
-   background: #f5574c;
-
-border: 1vh solid black;
-font-size: 1000px;
-
-
-}
-
-
-#sidenav-controls {
-   margin: -18vh 0 0 0;  /** messes with the sidenavr buttons */
-   width: 100%;
-   height: 5vh;    /**  body main size, big number big body  **/
-
-
-
-   transform: translate(-15vh, -26vh);  /* pos for button, opening the nav  */
-
-}
-#sidenav-controls label {
-   transition: opacity 0.2 s ease-out;
-   display: none;
-   width: 5vh;
-   height: 5vh;
-   opacity: 0;
-
-
-}
-#sidenav-controls label:hover {
-   opacity: 0;
-
-}
-
-
-
-
-#sidenav1:checked ~ #sidenav-controls label:nth-child(2),
-#sidenav2:checked ~ #sidenav-controls label:nth-child(1)
-
-
-
-
- {
-   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-   float:right;
-   transform: translate(4vh, -22vh);
-   display: block;
-}
-
-#sidenav1:checked ~ #sidenav-controls label:nth-last-child(1),
-#sidenav2:checked ~ #sidenav-controls label:nth-last-child(2)
-{
-   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-   float:left;
-   transform: translate(-10vh, -22vh);  /** x = width, y = height  **/
-   display: block;
-
-}
-
-}
-#sidenav1:checked ~ #bullets label:nth-child(1),
-#sidenav2:checked ~ #bullets label:nth-child(2) {
-   background: #444;
-}
-@media screen and (max-width: 90vh)  /** var egt 900px, idk what this does rn **/ {
-   #sidenav1:checked ~ #sidenav-controls label:nth-child(2),
-   #sidenav2:checked ~ #sidenav-controls label:nth-child(1),
-
-   #sidenav1:checked ~ #sidenav-controls label:nth-last-child(2),
-   #sidenav2:checked ~ #sidenav-controls label:nth-last-child(1),
-{
-      margin: 0;
-   }
-   #sidenavs {
-      max-width: calc(100% - 14vh);
+      max-width: calc(100% - 140px);
       margin: 0 auto;
    }
 }
