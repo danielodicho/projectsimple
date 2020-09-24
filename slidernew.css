@@ -228,8 +228,8 @@ width: 158vh;
 
 #sidenavs .sidenav_1 {
    background: #f5574c;
-
-border: 1vh solid black;
+transform: translateY(1px);
+border: 1.2vh solid black;
 
 
 
